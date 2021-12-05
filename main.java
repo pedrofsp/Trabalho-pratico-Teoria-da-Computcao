@@ -80,10 +80,10 @@ public class main {
 
       Maquina maquina = new Maquina();
 
-      maquina.AdicionaEstado(estadosCriados.get(0).getRepresentacao(), true);
+      maquina.AdicionaEstado(estadosCriados.get(0), true);
 
       for (int i = 1; i< estadosCriados.size(); i++){
-        maquina.AdicionaEstado(estadosCriados.get(i).getRepresentacao(), false);
+        maquina.AdicionaEstado(estadosCriados.get(i), false);
       }
     
       palavra = palavra.replace("111", Simbolo.B.getSimbolo());
@@ -92,15 +92,15 @@ public class main {
       
       maquina.SetEntrada(palavra);
       
-      // for (int i=0; true; i++){ 
-      //   if (maquina.Atuar()){
-      //     System.out.println(i + "a execução");    
-      //   }
-      //   else break;
-      // }
-      
       maquina.printConteudoMaquina();
-    
+      
+      for (int i=0; true; i++){ 
+         if (maquina.Atuar()){
+           System.out.println(i + "a execução");    
+         }
+        else break;
+      }
+      
     } catch (FileNotFoundException e) {
       System.out.println("An error occurred.");
       e.printStackTrace();

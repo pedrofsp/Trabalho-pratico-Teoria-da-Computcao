@@ -14,10 +14,10 @@ public class Estado {
         transicoes.add(novaTransicao);
     }
 
-    public String obterTransicao(String simbolo){
+    public Transicao obterTransicao(String simbolo){
         for (int i=0; i < transicoes.size(); i++){
             if (transicoes.get(i).getLeitura() == simbolo){
-                return transicoes.get(i).getOrigem();
+                return transicoes.get(i);
             }
         }
         return null;
