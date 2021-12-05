@@ -20,5 +20,9 @@ public class Transicao {
     public String getOrigem(){
         return origem;
     }
+
+    public String getDestino(){
+        return destino;
+    }
 }
 

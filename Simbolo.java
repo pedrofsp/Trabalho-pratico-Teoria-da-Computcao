@@ -1,13 +1,13 @@
 public enum Simbolo{
-    a(1), b(2), B(3);
+    a("a"), b("b"), B("B");
 
-    private Integer simb;
+    private String simb;
 
-    Simbolo(Integer simb){
+    Simbolo(String simb){
         this.simb = simb;
     }
 
-    public Integer getSimbolo(){
+    public String getSimbolo(){
         return simb;
     }
 
