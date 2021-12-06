@@ -15,3 +15,5 @@ Trabalho implementado em Java
 `javac main.java` 
 - **Executar**
 `java main <nome_do_arquivo_de_entrada>`
+
+> Não é necessário .txt no nome do arquivo de entrada.
